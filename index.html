@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#fff7ee" />
+  <meta name="description" content="A little birthday surprise, just for Riri. Happy 18th!" />
+  <title>Happy 18th Birthday, Riri! ♡</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Serif+Display:ital@0;1&family=Great+Vibes&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="confetti-layer" id="confetti" aria-hidden="true"></div>
+  <div class="ambient-orb orb-one" aria-hidden="true"></div>
+  <div class="ambient-orb orb-two" aria-hidden="true"></div>
+
+  <header class="site-header" aria-label="Birthday website">
+    <div class="brand"><span class="brand-flower" aria-hidden="true">✿</span> <span>dear, riri</span><span class="brand-dot">.</span></div>
+    <div class="header-right">
+      <span class="made-for">a little something made just for you</span>
+      <div class="step-indicator" aria-label="Experience progress"><span class="step-dot active" data-step="wish"></span><span class="step-dot" data-step="gallery"></span><span class="step-dot" data-step="letter"></span></div>
+    </div>
+  </header>
+
+  <main id="app">
+    <!-- THE WISH -->
+    <section class="screen screen-wish active" id="wish-screen" aria-labelledby="welcome-heading">
+      <div class="hero-shell">
+        <div class="hero-left">
+          <div class="small-overline"><span class="overline-line"></span> IT'S YOUR BIG ONE-EIGHT <span class="overline-star">✧</span></div>
+          <h1 id="welcome-heading">Happy 18th<br /><em>Birthday,</em><br /><span class="script riri">Riri!</span></h1>
+          <p class="hero-subtitle">Eighteen years of being utterly, wonderfully <em>you.</em></p>
+          <p class="hero-detail">But first, a little birthday wish...</p>
+          <div class="hero-actions">
+            <button class="main-button" id="blow-button" type="button">Make a wish &amp; Tap the Mic aside &amp; blow <span aria-hidden="true">✦</span></button>
+            <button class="mic-button" id="mic-button" type="button" aria-label="Use microphone to blow out the candles" title="Try blowing into your microphone"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><rect x="9" y="2" width="6" height="12" rx="3"/><path d="M5 10a7 7 0 0 0 14 0M12 17v5m-4 0h8"/></svg><span class="sr-only">Use microphone</span></button>
+          </div>
+          <p class="microcopy" id="mic-status" role="status">Tap to blow out the candles, or use your mic ♡</p>
+          <div class="hero-signature"><span class="tiny-sparkle">✳</span> some wishes are worth a little extra magic</div>
+        </div>
+        <div class="hero-right">
+          <div class="cake-scene" id="cake-scene">
+            <span class="doodle doodle-a">✳</span><span class="doodle doodle-b">✧</span><span class="doodle doodle-c">✿</span>
+            <div class="cake-circle"></div>
+            <div class="scenery-label scenery-label-top">eighteen <span>and blooming</span></div>
+            <svg class="cake-svg" viewBox="0 0 540 510" role="img" aria-label="Illustration of a pink and ivory birthday cake with two glowing number candles, 1 and 8">
+              <defs>
+                <linearGradient id="cakeSide" x1="0" x2="1"><stop offset="0" stop-color="#d88e9c"/><stop offset=".5" stop-color="#e8aebe"/><stop offset="1" stop-color="#c77c8d"/></linearGradient>
+                <linearGradient id="cakeTop" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#fffdf5"/><stop offset="1" stop-color="#f9e6d6"/></linearGradient>
+                <linearGradient id="flameGrad" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#fffbe4"/><stop offset=".42" stop-color="#ffdf8c"/><stop offset="1" stop-color="#ff9768"/></linearGradient>
+                <filter id="flameGlow"><feGaussianBlur stdDeviation="7"/></filter>
+              </defs>
+              <ellipse cx="268" cy="452" rx="183" ry="19" fill="#8b6c66" opacity=".13" />
+              <ellipse cx="268" cy="431" rx="174" ry="18" fill="#ede4d6"/>
+              <path d="M117 428 Q268 448 420 428" stroke="#c8b5ac" stroke-width="5" fill="none"/>
+              <rect x="146" y="272" width="246" height="151" rx="17" fill="url(#cakeSide)" />
+              <ellipse cx="269" cy="420" rx="123" ry="18" fill="#d18c9e"/>
+              <ellipse cx="269" cy="270" rx="123" ry="31" fill="url(#cakeTop)"/>
+              <path d="M146 274 Q161 283 168 273 Q180 279 180 300 Q182 322 193 307 Q198 300 196 282 Q214 291 221 275 Q232 282 236 299 Q240 320 250 309 Q255 300 251 284 Q267 291 277 276 Q284 283 286 300 Q291 327 301 305 Q305 295 302 281 Q318 290 331 276 Q337 282 340 303 Q345 324 355 307 Q360 291 358 282 Q380 286 392 273 L392 293 Q378 297 372 295 Q367 326 356 319 Q348 312 348 298 Q332 292 329 310 Q321 335 311 316 Q308 306 307 291 Q284 293 281 306 Q272 330 260 312 Q257 304 257 292 Q235 294 233 312 Q223 333 212 314 Q208 304 211 291 Q190 293 189 310 Q184 328 172 317 Q168 310 168 292 Q155 294 146 291 Z" fill="#fff6eb"/>
+              <path d="M170 351 Q205 365 236 351 T306 351 T367 351" fill="none" stroke="#f8d5d6" stroke-width="4" stroke-dasharray="1 10" stroke-linecap="round"/>
+              <path d="M173 382 Q211 397 248 382 T325 382 T367 382" fill="none" stroke="#edbec6" stroke-width="4" stroke-dasharray="1 13" stroke-linecap="round"/>
+              <g class="cake-flower" transform="translate(170 324)"><ellipse cx="-12" cy="-7" rx="12" ry="6" transform="rotate(-38 -12 -7)" fill="#8d9d84"/><ellipse cx="10" cy="3" rx="12" ry="6" transform="rotate(35 10 3)" fill="#7f987d"/><circle cx="0" cy="-3" r="12" fill="#f6c3b5"/><circle cx="-8" cy="-8" r="7" fill="#ffe5d4"/><circle cx="8" cy="-8" r="7" fill="#ffe5d4"/><circle cx="-8" cy="5" r="7" fill="#ffe5d4"/><circle cx="8" cy="5" r="7" fill="#ffe5d4"/><circle cx="0" cy="-2" r="4" fill="#e1b05d"/></g>
+              <g class="cake-flower" transform="translate(356 393) scale(.82)"><ellipse cx="-18" cy="-3" rx="12" ry="6" transform="rotate(-38 -18 -3)" fill="#8d9d84"/><ellipse cx="12" cy="4" rx="12" ry="6" transform="rotate(35 12 4)" fill="#7f987d"/><circle cx="0" cy="0" r="12" fill="#f6c3b5"/><circle cx="-8" cy="-8" r="7" fill="#ffe5d4"/><circle cx="8" cy="-8" r="7" fill="#ffe5d4"/><circle cx="-8" cy="5" r="7" fill="#ffe5d4"/><circle cx="8" cy="5" r="7" fill="#ffe5d4"/><circle cx="0" cy="0" r="4" fill="#e1b05d"/></g>
+              <g class="cake-flower" transform="translate(310 270) scale(.63)"><ellipse cx="-12" cy="-7" rx="12" ry="6" fill="#8d9d84"/><circle cx="0" cy="0" r="12" fill="#f6c3b5"/><circle cx="-8" cy="-8" r="7" fill="#ffe5d4"/><circle cx="8" cy="-8" r="7" fill="#ffe5d4"/><circle cx="-8" cy="5" r="7" fill="#ffe5d4"/><circle cx="8" cy="5" r="7" fill="#ffe5d4"/><circle cx="0" cy="0" r="4" fill="#e1b05d"/></g>
+              <g class="numbers" font-family="Georgia, serif" font-weight="700" text-anchor="middle" font-size="116" stroke="#b26e81" stroke-width="2"><text x="228" y="262" fill="#f2b9c3">1</text><text x="302" y="262" fill="#f2b9c3">8</text></g>
+              <g class="flames" aria-hidden="true"><ellipse class="flame-glow" cx="227" cy="131" rx="20" ry="29" fill="#ffcb8e" opacity=".44" filter="url(#flameGlow)"/><path class="flame flame-one" d="M227 151 C211 137 219 122 228 109 C238 126 245 140 227 151Z" fill="url(#flameGrad)"/><path class="flame flame-two" d="M301 151 C286 137 291 122 301 109 C314 130 317 141 301 151Z" fill="url(#flameGrad)"/><ellipse class="flame-glow" cx="301" cy="131" rx="20" ry="29" fill="#ffcb8e" opacity=".44" filter="url(#flameGlow)"/></g>
+              <path d="M111 331 Q92 312 98 294 M110 336 Q88 341 77 329" fill="none" stroke="#99a791" stroke-width="3" stroke-linecap="round"/>
+              <path d="M410 367 Q438 345 434 316 M408 366 Q431 371 450 357" fill="none" stroke="#99a791" stroke-width="3" stroke-linecap="round"/>
+            </svg>
+            <div class="scenery-label scenery-label-bottom">make a <span>little wish</span> ✧</div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-bottom-bar"><span>18 looks lovely on you ♡</span><span class="hero-twig">✽</span><span>scrolling is overrated. magic isn't.</span></div>
+    </section>
+
+    <!-- THE BIRTHDAY SONG -->
+    <section class="screen screen-song" id="song-screen" aria-labelledby="song-heading" hidden>
+      <div class="song-backdrop-letter" aria-hidden="true">18</div>
+      <div class="song-panel">
+        <span class="small-overline center"><span class="overline-line"></span> OFFICIALLY EIGHTEEN <span class="overline-line"></span></span>
+        <div class="song-record" aria-hidden="true"><div class="song-record-center"><span>18</span><small>today ♡</small></div></div>
+        <h2 id="song-heading">And just like that...<br /><em>you're eighteen!</em></h2>
+        <p class="candle-message">A very Happy, PAN card, Driving license.....I mean 18th wala Birthday!!! Finally ab officially badi hogayi (sirf Age mein, baaki abhi bhi chhoti hai) ;)</p>
+        <div class="song-progress" role="group" aria-label="Birthday song progress">
+          <div class="song-progress-text"><span>🎵 a birthday song, just for you</span><span id="song-time">0:00 / 0:25</span></div>
+          <div class="progress-track" role="progressbar" id="intro-progress" aria-label="Birthday song playing" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"><div class="progress-fill" id="intro-fill"></div></div>
+          <p class="song-hint" id="song-hint" aria-live="polite">your memories are waiting on the other side ✧</p>
+          <button class="secondary-button retry-audio" id="retry-audio" type="button" hidden>▶ Play the birthday song</button>
+          <button class="text-button" id="skip-song" type="button" hidden>Continue to the memories →</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- THE SCRAPBOOK -->
+    <section class="screen screen-gallery" id="gallery-screen" aria-labelledby="gallery-heading" hidden>
+      <div class="gallery-wrap">
+        <div class="gallery-head">
+          <div class="gallery-head-left"><div class="small-overline"><span class="overline-line"></span> THE LITTLE THINGS, FOREVER</div><h2 id="gallery-heading">The Riri <span class="script">Archives</span><span class="gallery-asterisk">✳</span></h2><p>A scrapbook of her many, many eras. Tap a Polaroid to flip it. Swipe around. Smile a little.</p></div>
+          <div class="memory-stamp"><span class="stamp-top">est.</span><span class="stamp-number">18</span><span class="stamp-bottom">years of Riri</span></div>
+        </div>
+        <div class="chapter-nav" id="chapter-nav" role="tablist" aria-label="Memory chapters"></div>
+        <div class="album-paper">
+          <div class="album-paper-top"><div><p class="chapter-overline" id="chapter-index">CHAPTER 01 / 06</p><h3 id="chapter-title">Chhoti Hai ♡</h3></div><div class="chapter-doodle" id="chapter-doodle" aria-hidden="true">✿</div></div>
+          <p class="chapter-hint" id="chapter-hint">One little moment, a thousand memories.</p>
+          <div class="polaroid-track" id="polaroid-track" role="group" aria-label="Photos in this chapter"></div>
+          <p class="swipe-hint"><span aria-hidden="true">←</span> swipe to explore · tap to flip <span aria-hidden="true">→</span></p>
+          <div class="album-controls">
+            <button id="previous-chapter" class="round-arrow" type="button" aria-label="Previous chapter">←</button>
+            <div class="chapter-dots" id="chapter-dots" aria-label="Chapter progress"></div>
+            <button id="next-chapter" class="chapter-next" type="button">Next chapter <span aria-hidden="true">→</span></button>
+          </div>
+        </div>
+        <div class="gallery-footer"><div><span>✿</span> P.S. you still have one last surprise</div><button class="letter-link" id="open-letter-stage" type="button">A letter, just for you <span aria-hidden="true">↗</span></button></div>
+      </div>
+    </section>
+
+    <!-- THE LETTER -->
+    <section class="screen screen-letter" id="letter-screen" aria-labelledby="letter-heading" hidden>
+      <div class="letter-space">
+        <span class="small-overline center"><span class="overline-line"></span> ONE LAST LITTLE THING <span class="overline-line"></span></span>
+        <h2 id="letter-heading">Some things are better <em>said in a letter.</em></h2>
+        <p class="letter-subtitle">All the love, all the daant, all the drama. Sealed just for you.</p>
+        <button class="envelope" id="envelope-button" type="button" aria-label="Open your secret birthday letter">
+          <span class="envelope-shadow"></span><span class="envelope-back"></span><span class="envelope-letter-peek">for Riri, with love ♡</span><span class="envelope-flap"></span><span class="envelope-front"></span><span class="envelope-seal">♡</span>
+        </button>
+        <p class="envelope-instruction" id="envelope-instruction">tap the envelope to open your letter ✧</p>
+        <article class="actual-letter" id="actual-letter" hidden aria-label="A birthday letter to Riri">
+          <div class="letter-decoration" aria-hidden="true">✿ &nbsp; ✿ &nbsp; ✿</div>
+          <div class="letter-body" id="letter-body"></div>
+          <div class="letter-endmark" aria-hidden="true">♡</div>
+        </article>
+        <button class="replay-button" id="replay-button" type="button" hidden>↺ &nbsp; Re-live the little magic</button>
+        <div class="ending-credit">made with all my heart <span>✷</span> just for Riri</div>
+      </div>
+    </section>
+  </main>
+
+  <!-- The same audio element is used throughout the experience to improve mobile playback continuity. -->
+  <audio id="soundtrack" preload="auto" src="assets/audio/after-candle-blow.mp3" playsinline></audio>
+
+  <div class="floating-player" id="floating-player" hidden aria-label="Gallery music player">
+    <button class="player-toggle" id="player-toggle" type="button" aria-label="Pause gallery music" title="Play or pause music">Ⅱ</button>
+    <div class="player-details"><div class="player-title">memories sound better with music ♫</div><div class="player-line"><div id="gallery-progress" class="player-line-fill"></div></div></div>
+    <button class="speaker-toggle" id="speaker-toggle" type="button" aria-label="Mute music" title="Mute or unmute">♫</button>
+    <label class="volume-wrap"><span class="sr-only">Music volume</span><input id="volume-control" type="range" min="0" max="100" value="45" aria-label="Music volume" /></label>
+  </div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
